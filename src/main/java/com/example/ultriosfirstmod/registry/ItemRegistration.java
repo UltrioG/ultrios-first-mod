@@ -1,11 +1,10 @@
-package com.example.ultriofirstmod.registry;
+package com.example.ultriosfirstmod.registry;
 
-import com.example.ultriofirstmod.UltriosFirstMod;
-import com.example.ultriofirstmod.item.ChocoFish;
+import com.example.ultriosfirstmod.UltriosFirstMod;
+import com.example.ultriosfirstmod.item.ChocoFish;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.component.ItemLore;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;

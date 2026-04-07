@@ -1,4 +1,4 @@
-package com.example.ultriofirstmod.item;
+package com.example.ultriosfirstmod.item;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.effect.MobEffects;
@@ -7,7 +7,6 @@ import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.component.ItemLore;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ChocoFish extends Item {

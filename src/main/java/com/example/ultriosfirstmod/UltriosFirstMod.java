@@ -1,7 +1,7 @@
-package com.example.ultriofirstmod;
+package com.example.ultriosfirstmod;
 
-import com.example.ultriofirstmod.registry.CreativeTabRegistration;
-import com.example.ultriofirstmod.registry.ItemRegistration;
+import com.example.ultriosfirstmod.registry.CreativeTabRegistration;
+import com.example.ultriosfirstmod.registry.ItemRegistration;
 import net.neoforged.bus.api.IEventBus;
 import org.slf4j.Logger;
 
