@@ -1,0 +1,14 @@
+{
+  "itemGroup.ultriosfirstmod": "Ultrio's First Mod",
+
+  "ultriosfirstmod.configuration.title": "Ultrio's First Mod Configs",
+  "ultriosfirstmod.configuration.section.ultriosfirstmod.common.toml": "Ultrio's First Mod Configs",
+  "ultriosfirstmod.configuration.section.ultriosfirstmod.common.toml.title": "Ultrio's First Mod Configs",
+
+  "item.ultriosfirstmod.icon_item": "Icon of Me",
+  "item.ultriosfirstmod.chocofish": "le Fishe au Chocolat",
+
+  "creativetab.ultriosfirstmod.ultrio_main_tab": "Ultrio's First Mod!",
+
+  "ultriosfirstmod.lore.fishgusting": "Disgustingly fulfilling."
+}
