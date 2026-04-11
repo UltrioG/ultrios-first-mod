@@ -1,5 +1,6 @@
 package com.example.ultriosfirstmod;
 
+import com.example.ultriosfirstmod.misc.RespawnAtFriends;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
@@ -19,6 +20,8 @@ public class UltriosFirstModClient {
         // The config screen is accessed by going to the Mods screen > clicking on your mod > clicking on config.
         // Do not forget to add translations for your config options to the en_us.json file.
         container.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
+
+        RespawnAtFriends.init();
     }
 
     @SubscribeEvent
@@ -26,4 +29,5 @@ public class UltriosFirstModClient {
         // Some client setup code
 
     }
+
 }

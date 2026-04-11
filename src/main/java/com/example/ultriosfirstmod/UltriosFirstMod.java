@@ -2,6 +2,7 @@ package com.example.ultriosfirstmod;
 
 import com.example.ultriosfirstmod.registry.CreativeTabRegistration;
 import com.example.ultriosfirstmod.registry.ItemRegistration;
+import com.example.ultriosfirstmod.registry.PayloadRegistration;
 import net.neoforged.bus.api.IEventBus;
 import org.slf4j.Logger;
 
@@ -19,6 +20,8 @@ public class UltriosFirstMod {
     public UltriosFirstMod(IEventBus modBus) {
         CreativeTabRegistration.register(modBus);
         ItemRegistration.register(modBus);
+        PayloadRegistration.register(modBus);
+
     }
 
 }
