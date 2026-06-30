@@ -50,8 +50,8 @@ HII!!!!!!!! THIS IS MY FIRST MOD!!!!!!!!!!!!!!!!!!!
 '''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.
-#[[mixins]]
-#config="${mod_id}.mixins.json"
+[[mixins]]
+config="${mod_id}.mixins.json"
 
 # The [[accessTransformers]] block allows you to declare where your AT file is.
 # If this block is omitted, a fallback attempt will be made to load an AT from META-INF/accesstransformer.cfg
@@ -85,6 +85,22 @@ modId="minecraft"
 type="required"
 # This version range declares a minimum of the current minecraft version up to but not including the next major version
 versionRange="${minecraft_version_range}"
+ordering="NONE"
+side="BOTH"
+
+# Create
+[[dependencies.${mod_id}]]
+modId="create"
+type="required"
+versionRange="[6.0.10,6.1.0)"
+ordering="NONE"
+side="BOTH"
+
+# AE2
+[[dependencies.${mod_id}]]
+modId="ae2"
+type="required"
+versionRange="[19.2.17,26.1.1-alpha)"
 ordering="NONE"
 side="BOTH"
 

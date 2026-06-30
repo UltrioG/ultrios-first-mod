@@ -1,5 +1,7 @@
 package com.example.ultriosfirstmod;
 
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.common.ModConfigSpec;
 
 // An example config class. This is not required, but it's a good idea to have one to keep your config organized.
@@ -11,6 +13,9 @@ public class Config {
             .comment("Whether the mod should be nice")
             .define("beNice", true);
 
+    public static final ModConfigSpec.ConfigValue<String> SKY_MINE = BUILDER
+            .comment("What item to drop when mining the sky")
+            .define("skyMine", "minecraft:dirt");
 //    public static final ModConfigSpec.BooleanValue LOG_DIRT_BLOCK = BUILDER
 //            .comment("Whether to log the dirt block on common setup")
 //            .define("logDirtBlock", true);
@@ -30,7 +35,7 @@ public class Config {
 //
 //    static final ModConfigSpec SPEC = BUILDER.build();
 //
-//    private static boolean validateItemName(final Object obj) {
-//        return obj instanceof String itemName && BuiltInRegistries.ITEM.containsKey(ResourceLocation.parse(itemName));
-//    }
+    public static boolean validateItemName(final Object obj) {
+        return obj instanceof String itemName && BuiltInRegistries.ITEM.containsKey(ResourceLocation.parse(itemName));
+    }
 }
