@@ -35,7 +35,8 @@ public abstract class KineticBlockSkyBreaker extends BlockEntity implements IKin
 
     @Unique
     public boolean minecraftModdingAttempt$isBreakingSky() {
-        return this.breakingPos.getY() >= 320;
+        if (this.getLevel() == null) return false;
+        return this.breakingPos.getY() >= this.getLevel().getMaxBuildHeight();
     }
 
 //    @Inject(
